@@ -1,0 +1,26 @@
+experiment:
+  timestamp_format: "%Y-%m-%d-%H-%M-%S"
+  limit: 10
+  min_delay: 4
+  max_delay: 8
+  headless_mode: false
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+
+search_engines:
+  Google:
+    url: "https://www.google.com/search?q="
+    container: "div#search"
+    link_selector: "div.g a"
+  Bing:
+    url: "https://www.bing.com/search?q="
+    container: "ol#b_results"
+    link_selector: "li.b_algo h2 a"
+  Yahoo!:
+    url: "https://search.yahoo.com/search?p="
+    container: "div#main"
+    link_selector: "h3.title a"
+
+paths:
+  assets: "data/queries/"
+  output_task1: "output/task1/"
+  output_task2: "output/task2/"
